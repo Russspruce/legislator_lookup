@@ -1,0 +1,14 @@
+
+  <h4>{{bill.official_title}}</h4>
+
+  {{#if showMoreBill}}
+  <h5> <a href={{bill.urls.congress}}>{{bill.urls.congress}}</a></h5>
+  <h4>Sponsor: {{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h4>
+  <h4>Introduced: {{bill.introduced_on}}</h4>
+  <br>
+    <button {{action 'hideBill'}}>Hide Info</button>
+    <hr>
+  {{else}}
+    <button {{action 'showBill'}}>More Info</button>
+    <hr>
+  {{/if}}

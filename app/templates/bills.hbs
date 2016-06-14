@@ -1,3 +1,5 @@
-{{outlet}}
-
-<h1>Bills go here</h1>
+<h1>Bills</h1>
+<br>
+{{#each model as |bill|}}
+{{bill-detail bill=bill}}
+{{/each}}
