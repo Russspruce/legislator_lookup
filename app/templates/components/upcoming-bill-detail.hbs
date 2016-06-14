@@ -1,0 +1,14 @@
+<h4>{{upcomingbill.bill_id}}</h4>
+
+{{#if showMoreUpcomingBill}}
+<h5> <a href={{bill.urls.congress}}>{{bill.urls.congress}}</a></h5>
+<h4>Description: {{upcomingbill.description}}</h4>
+<h4>Chamber: {{upcomingbill.chamber}}</h4>
+<h4>Scheduled: {{upcomingbill.scheduled_at}}</h4>
+<br>
+  <button {{action 'hideMoreBill'}}>Hide Info</button>
+  <hr>
+{{else}}
+  <button {{action 'showMoreBill'}}>More Info</button>
+  <hr>
+{{/if}}

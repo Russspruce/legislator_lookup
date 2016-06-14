@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('committee-route', {path: '/committee-route'});
   this.route('subcommittees', {path: '/subcommittee/:committee_id'});
   this.route('bills');
+  this.route('upcomingbills');
 });
 
 export default Router;
