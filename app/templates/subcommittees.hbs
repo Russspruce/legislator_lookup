@@ -1,0 +1,12 @@
+{{#if model}}
+<h2>Subcommittees</h2>
+<br>
+  {{#each model as |subcommittee|}}
+    <h4>{{subcommittee.name}}</h4>
+    <p> Chamber: {{subcommittee.chamber}}</p>
+    <br>
+  {{/each}}
+{{else}}
+<h2>There are no subcommittees.</h2>
+{{#link-to 'committee-route'}}Go back{{/link-to}}
+{{/if}}
